@@ -17,9 +17,10 @@ app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname, "src", "about.html"));
 });
 
-// Route for articles (dynamic routing)
-app.get("/article/:id", (req, res) => {
-  res.sendFile(path.join(__dirname, "src", "article.html"));
+// Redirect .html URLs to clean URLs
+app.get("/article.html", (req, res) => {
+  const query = req.url.split("?")[1]; // Extract query parameters
+  res.redirect(`/article?${query}`);
 });
 
 // Start the server
