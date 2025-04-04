@@ -18,7 +18,7 @@ app.get("/about", (req, res) => {
 });
 
 // Route for articles (dynamic routing)
-app.get("/article/:id", (req, res) => {
+app.get("/article", (req, res) => {
   res.sendFile(path.join(__dirname, "src", "article.html"));
 });
 
