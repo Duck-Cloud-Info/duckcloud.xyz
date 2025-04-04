@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${article.description}</p>
           <p class="tags">Tags: ${article.tags.join(", ")}</p>
           <p class="timestamp">Published: ${article.timestamp}</p>
-          <a href="/article.html?id=${article.id}" class="read-more">Read More</a>
+          <a href="/article?id=${article.id}" class="read-more">Read More</a>
         </div>
       `;
 

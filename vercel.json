@@ -1,3 +1,12 @@
 {
-  "rewrites": []
+  "rewrites": [
+    {
+      "source": "/article",
+      "destination": "/src/article.html"
+    },
+    {
+      "source": "/article/:id",
+      "destination": "/src/article.html"
+    }
+  ]
 }

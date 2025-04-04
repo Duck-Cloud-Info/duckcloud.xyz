@@ -17,6 +17,12 @@ app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname, "src", "about.html"));
 });
 
+// Route for articles (dynamic routing without .html)
+app.get("/article", (req, res) => {
+  // Serve the article.html file for any request to /article
+  res.sendFile(path.join(__dirname, "src", "article.html"));
+});
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
