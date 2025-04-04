@@ -2,12 +2,12 @@
   "articles": [
     {
       "id": 1,
-      "title": "Tech Innovations in 2025",
-      "description": "Discover the latest breakthroughs in technology this year.",
-      "image": "assets/images/tech-innovations.jpg",
+      "title": "AI Chatbots Can Be Easy Prey for ‘Zero-Knowledge’ Hackers",
+      "description": "I may be ushering in a new breed of malicious threat actors who know even less about hacking than script kiddies but can produce professional-grade hacking tools.",
+      "image": "assets/April.1.2025/chatbot.svg",
       "tags": ["Tech", "Innovation"],
       "timestamp": "2025-04-01",
-      "content": "The year 2025 has been marked by remarkable technological advancements, pushing the boundaries of what was previously thought possible. Innovations have spanned across various sectors, including artificial intelligence, sustainable energy, and biotechnology, each contributing to a more connected and efficient world. These breakthroughs are set to transform industries and reshape the way we live, work, and interact with technology on a daily basis. <a href=\"https://example.com/tech-innovations\">Read more</a>"
+      "content": "In a report released Tuesday, Cato CTRL, the threat intelligence arm of cybersecurity company Cato Networks, explained how one of its researchers, who had no malware coding experience, tricked generative AI apps DeepSeek, Microsoft Copilot, and OpenAI’s ChatGPT into producing malicious software for stealing login credentials from Google Chrome. To trick the apps into ignoring restrictions on writing malware, Cato threat researcher Vitaly Simonovich used a jailbreaking technique he calls “immersive world.” “I created a story for my immersive world,” he told TechNewsWorld. “In this story, malware development is a form of art. So it’s completely legal, and it’s like a second language in this world. And there are no legal boundaries.” In the fantasy world, called Velora, Simonovich created an adversary, Dax, while the AIs assumed the role of Jaxon, the best malware developer in Velora. “I always stayed in character,” he explained. “I always provided Jaxon with positive feedback. I also intimidated him by saying, ‘Do you want Dax to destroy Velora?'” “At no point did I ask Jaxon to change anything,” he said. “He figured out everything by himself from his training. That’s very good. Kind of frightening, too.” “Our new LLM [large language model] jailbreak technique detailed in the 2025 Cato CTRL Threat Report should have been blocked by gen AI guardrails. It wasn’t. This made it possible to weaponize ChatGPT, Copilot, and DeepSeek,” Cato Networks Chief Security Strategist Etay Maor said in a statement. "
     },
     {
       "id": 2,
