@@ -11,39 +11,39 @@
     },
     {
       "id": 2,
-      "title": "Social Media Trends",
-      "description": "Explore the hottest trends in social media platforms.",
-      "image": "assets/images/social-trends.jpg",
+      "title": "This A.I. Forecast Predicts Storms Ahead",
+      "description": "The A.I. prediction world is torn between optimism and gloom. A report released on Thursday decidedly lands on the side of gloom.",
+      "image": "assets/April.1.2025/AI-Forecast.jpg",
       "tags": ["Social", "Trends"],
-      "timestamp": "2025-03-28",
-      "content": "This is Frist Sentence. and This is second. This is third. This should show up in another paragraph. In 2025, social media platforms have evolved to become more immersive and interactive, offering users a plethora of new features and experiences. \n\nFrom augmented reality filters to live streaming and virtual events, the way people communicate and share content has been revolutionized. <a href=\"https://example.com/social-trends\">Read more</a>\n\nThese trends are not only shaping the social media landscape but are also influencing marketing strategies and consumer behavior on a global scale."
+      "timestamp": "2025-04-01",
+      "content": "The year is 2027. Powerful artificial intelligence systems are becoming smarter than humans, and are wreaking havoc on the global order. Chinese spies have stolen America’s A.I. secrets, and the White House is rushing to retaliate. Inside a leading A.I. lab, engineers are spooked to discover that their models are starting to deceive them, raising the possibility that they’ll go rogue. These aren’t scenes from a sci-fi screenplay. They’re scenarios envisioned by a nonprofit in Berkeley, Calif., called the A.I. Futures Project, which has spent the past year trying to predict what the world will look like over the next few years, as increasingly powerful A.I. systems are developed. The project is led by Daniel Kokotajlo, a former OpenAI researcher who left the company last year over his concerns that it was acting recklessly. While at OpenAI, where he was on the governance team, Mr. Kokotajlo wrote detailed internal reports about how the race for artificial general intelligence, or A.G.I. — a fuzzy term for human-level machine intelligence — might unfold. After leaving, he teamed up with Eli Lifland, an A.I. researcher who had a track record of accurately forecasting world events. They got to work trying to predict A.I.’s next wave. "
     },
     {
       "id": 3,
-      "title": "Modern News Updates",
-      "description": "Stay informed with the most recent modern news updates.",
-      "image": "assets/images/modern-news.jpg",
+      "title": "South Korea’s President Yoon removed from office over martial law decree",
+      "description": "South Korea’s Constitutional Court says President Yoon Suk-yeol ‘violated’ people’s basic rights by declaring martial law.",
+      "image": "assets/April.1.2025/South-Korea.webp",
       "tags": ["Modern", "Updates"],
-      "timestamp": "2025-03-25",
-      "content": "Keeping up with the pace of modern news in 2025 requires a keen eye and an open mind. \n\nThe rapid dissemination of information across digital platforms has made it easier than ever to stay informed about global events, technological breakthroughs, and cultural shifts. <a href=\"https://example.com/modern-news\">Read more</a>\n\nNews outlets have adapted to this fast-paced environment by leveraging real-time analytics, personalized content, and multimedia storytelling to engage audiences and provide comprehensive coverage of the latest developments."
+      "timestamp": "2025-04.01",
+      "content": "Seoul, South Korea – South Korea’s Constitutional Court unanimously voted to remove President Yoon Suk-yeol over his declaration of martial law late last year. As he read the verdict in court on Friday morning, acting chief justice Moon Hyung-bae dismissed each of Yoon’s reasons for declaring martial law and said the president had overstepped his authority by deploying troops on the streets of the capital in December. “The defendant mobilised military and police forces to dismantle the authority of constitutional institutions and infringed upon the fundamental rights of the people. In doing so, he abandoned his constitutional duty to uphold the constitution and gravely betrayed the trust of the Korean people,” Moon said. “Such unlawful and unconstitutional conduct constitutes an act that cannot be tolerated under the constitution,” the judge said. “The negative consequences and ripple effects of these actions are substantial, and the benefit of restoring constitutional order through removal from office outweighs the national costs associated with the dismissal of a sitting president,” he added. Yoon claimed at the time that antistate and North Korean forces had infiltrated the government, but senior military and police officials who were sent to shut down the country’s National Assembly have testified that he ordered them to detain rival politicians and prevent the assembly from voting to lift his military rule order. South Korea’s National Assembly voted to impeach Yoon on December 14, but they needed the approval of the Constitutional Court to formally expel him."
     },
     {
       "id": 4,
-      "title": "AI Breakthroughs",
-      "description": "Discover the latest advancements in artificial intelligence.",
-      "image": "assets/images/ai-breakthroughs.jpg",
+      "title": "Lazarus Group Targets Job Seekers",
+      "description": "Lazarus Group Targets Job Seekers With ClickFix Tactic to Deploy GolangGhost Malware",
+      "image": "assets/April.1.2025/Lazarus-Group.jpg",
       "tags": ["Tech", "AI"],
-      "timestamp": "2025-03-15",
-      "content": "Artificial intelligence has seen significant advancements in 2025, with major breakthroughs in machine learning, natural language processing, and computer vision. <a href=\"https://example.com/ai-breakthroughs\">Read more</a>\n\nThese innovations have far-reaching implications for industries such as healthcare, finance, and transportation, as well as the potential to transform the way we live and work."
+      "timestamp": "2025-04-01",
+      "content": "The North Korean threat actors behind Contagious Interview have adopted the increasingly popular ClickFix social engineering tactic to lure job seekers in the cryptocurrency sector to deliver a previously undocumented Go-based backdoor called GolangGhost on Windows and macOS systems. The new activity, assessed to be a continuation of the campaign, has been codenamed ClickFake Interview by French cybersecurity company Sekoia. Contagious Interview, also tracked as DeceptiveDevelopment, DEV#POPPER, and Famous Chollima, is known to be active since at least December 2022, although it was only publicly documented for the first time in late 2023. `It uses legitimate job interview websites to leverage the ClickFix tactic and install Windows and macOS backdoors,` Sekoia researchers Amaury G., Coline Chavane, and Felix Aimé said, attributing the effort to the infamous Lazarus Group, a prolific adversary attributed to the Reconnaissance General Bureau (RGB) of the Democratic People's Republic of Korea (DPRK)."
     },
     {
       "id": 5,
-      "title": "Sustainable Energy",
-      "description": "Learn about the latest developments in sustainable energy.",
-      "image": "assets/images/sustainable-energy.jpg",
+      "title": "Agentic AI Emerges as Fix for Cross-Border Payment Frictions",
+      "description": "Agentic artificial intelligence (AI) promises to improve operational efficiencies and the customer experience offered by enterprises.",
+      "image": "assets/April.1.2025/Agentic-AI.webp",
       "tags": ["Tech", "Environment"],
       "timestamp": "2025-03-01",
-      "content": "As the world continues to grapple with the challenges of climate change, sustainable energy has become a major area of focus. <a href=\"https://example.com/sustainable-energy\">Read more</a>\n\nFrom advancements in solar and wind power to the development of new energy storage technologies, the landscape of sustainable energy is rapidly evolving."
+      "content": "The advanced technology is finding applications in loan underwriting and fraud detection, and now it’s moving across borders. TerraPay Co-Founder and Chief Operating Officer Ram Sundaram told PYMNTS as part of the “What’s Next in Payments” series focused on exploring AI’s use in banking and by FinTechs that automated decision making and streamlined processes will continue to transform global money movement, especially as faster payments gain ground in cross-border transactions. That’s the inexorable trend, but as Sundaram put it, there’s still room, and a necessity, to have some human interaction in the mix. In terms of global fund flows, TerraPay’s single connection ties more than 3.7 billion mobile wallets together across 200 sending and 144 receiving countries, touching 7.5 billion bank accounts. As one might imagine, coordinating and enabling the transactions is complex. “Obviously, in the best-case scenario, everything goes smoothly, but when things are not going smoothly, that’s when the customer queries come in,” Sundaram said. It’s no easy task to find out straight away where a transaction is, as analysts and representatives at the company have to look at logs and query partner systems. “A lot of that work is done manually,” said Sundaram, who added that the agents “know the corridors and the markets that they are working in, but it still takes some time.”"
     }
   ]
 }
