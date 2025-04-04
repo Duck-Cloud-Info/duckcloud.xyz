@@ -19,6 +19,7 @@ app.get("/about", (req, res) => {
 
 // Route for articles (dynamic routing without .html)
 app.get("/article", (req, res) => {
+  // Serve the article.html file for any request to /article
   res.sendFile(path.join(__dirname, "src", "article.html"));
 });
 
