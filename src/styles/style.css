@@ -91,10 +91,13 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* Center and make article images responsive */
 .news-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+  width: 100%; /* Ensures the image is responsive */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 8px; /* Optional: Adds rounded corners */
 }
 
 .news-card .content {

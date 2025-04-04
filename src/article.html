@@ -83,7 +83,12 @@
           articleContent.innerHTML = `
             <h2>${article.title}</h2>
             <p>Published: ${article.timestamp}</p>
-            <img src="${article.image}" alt="${article.title}">
+            <img src="${article.image}" alt="${article.title}" style="  display: block;
+              margin: 0 auto;
+              width: 100%;
+              height: auto;
+              border-radius: 8px;"
+            >
             ${formattedContent}
           `;
 
