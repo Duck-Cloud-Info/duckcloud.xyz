@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Duck Cloud News - Stay updated with the latest tech, social, and modern news. Explore articles on technology, social media trends, and modern updates.">
+    <meta name="keywords" content="news, tech news, social news, modern news, technology, AI, sustainable energy, Duck Cloud News">
+    <meta name="author" content="Duck Cloud News">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Duck Cloud News - Latest Tech, Social, and Modern News">
+    <meta property="og:description" content="Stay updated with the latest tech, social, and modern news. Explore articles on technology, social media trends, and modern updates.">
+    <link rel="icon" href="assets/DuckCloudNews/favicon.ico" type="image/x-icon">
+    <meta property="og:image" content="assets/DuckCloudNews/favicon-32x32.png">
+    <meta property="og:url" content="https://duckcloudnews.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Duck Cloud News - Latest Tech, Social, and Modern News">
+    <meta name="twitter:description" content="Stay updated with the latest tech, social, and modern news.">
+    <meta name="twitter:image" content="assets/images/og-image.jpg">
+    <title>Duck Cloud News - Latest Tech, Social, and Modern News</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div style="display: flex; align-items: center;">
+                <img src="assets/DuckCloudNews/favicon-32x32.png" alt="Duck Cloud News Logo" class="logo" style="margin-right: 10px;">
+                <h1>Duck Cloud News</h1>
+            </div>
+            <p>Your source for the latest tech, social, and modern news.</p>
+            <nav>
+                <button id="hamburger-menu" aria-label="Toggle navigation menu">&#9776;</button>
+                <div id="nav-links">
+                    <a href="#recent-news">Recent News</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#about">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="recent-news" class="container">
+            <h2>Recent News</h2>
+            <div id="news-container">
+                <!-- News articles will be dynamically loaded here -->
+            </div>
+        </section>
+        
+        <section id="categories" class="container">
+            <h2>Categories</h2>
+            <div id="categories-container">
+                <button class="category-btn" data-category="Tech">Tech</button>
+                <button class="category-btn" data-category="Social">Social</button>
+                <button class="category-btn" data-category="Modern">Modern</button>
+            </div>
+        </section>
+        
+        <section id="about" class="container">
+            <h2>About Duck Cloud News</h2>
+            <p>Duck Cloud News is your go-to platform for staying informed about the latest trends in technology, social media, and modern news. We aim to deliver high-quality, up-to-date articles to keep you in the loop.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Duck Cloud News. All rights reserved.</p>
+        <div class="footer-tags">
+            <span>Tags:</span>
+            <a href="#tech">Tech</a>
+            <a href="#social">Social</a>
+            <a href="#modern">Modern</a>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsMediaOrganization",
+      "name": "Duck Cloud News",
+      "url": "https://duckcloud.xyz",
+      "logo": "https://duckcloud.xyz/assets/DuckCloudNews/favicon-32x32.png",
+      "sameAs": [
+        "https://twitter.com/duckcloudnews",
+        "https://facebook.com/duckcloudnews"
+      ]
+    }
+    </script>
+</body>
+</html>

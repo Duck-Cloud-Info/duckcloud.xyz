@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read the full article on Duck Cloud News. Stay informed with the latest updates in technology, social media, and modern news.">
+  <meta name="keywords" content="news, tech news, social news, modern news, Duck Cloud News, article">
+  <meta name="author" content="Duck Cloud News">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Duck Cloud News - Article">
+  <meta property="og:description" content="Read the full article on Duck Cloud News. Stay informed with the latest updates in technology, social media, and modern news.">
+  <meta property="og:image" content="assets/DuckCloudNews/favicon-32x32.png">
+  <link rel="icon" href="assets/DuckCloudNews/favicon.ico" type="image/x-icon">
+  <meta property="og:url" content="https://duckcloudnews.com/article.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Duck Cloud News - Article">
+  <meta name="twitter:description" content="Read the full article on Duck Cloud News.">
+  <meta name="twitter:image" content="assets/images/og-image.jpg">
+  <title>Duck Cloud News - Article</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div style="display: flex; align-items: center;">
+        <img src="assets/DuckCloudNews/favicon-32x32.png" alt="Duck Cloud News Logo" class="logo" style="margin-right: 10px;">
+        <h1>Duck Cloud News</h1>
+      </div>
+      <p>Your source for the latest tech, social, and modern news.</p>
+      <nav>
+        <button id="hamburger-menu" aria-label="Toggle navigation menu">&#9776;</button>
+        <div id="nav-links">
+          <a href="/">Home</a>
+          <a href="/#categories">Categories</a>
+          <a href="/#about">About</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article id="article-content">
+      <!-- Article content will be dynamically loaded here -->
+    </article>
+
+    <div class="button-container">
+      <a href="index.html">Go Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Duck Cloud News. All rights reserved.</p>
+    <div class="footer-tags">
+      <span>Tags:</span>
+      <a href="#tech">Tech</a>
+      <a href="#social">Social</a>
+      <a href="#modern">Modern</a>
+    </div>
+  </footer>
+  <script>
+    // Fetch article data based on ID
+    const urlParams = new URLSearchParams(window.location.search);
+    const articleId = urlParams.get("id");
+
+    fetch("data/data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const article = data.articles.find((a) => a.id == articleId);
+        if (article) {
+          const articleContent = document.getElementById("article-content");
+
+          // Split content into sentences and group into paragraphs
+          const sentences = article.content.split(/(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?|!)\s/); // Split by sentence-ending punctuation
+          const paragraphs = [];
+          for (let i = 0; i < sentences.length; i += 3) {
+            paragraphs.push(sentences.slice(i, i + 3).join(" "));
+          }
+
+          // Generate HTML for paragraphs
+          const formattedContent = paragraphs.map((para) => `<p>${para}</p>`).join("");
+
+          articleContent.innerHTML = `
+            <h2>${article.title}</h2>
+            <p>Published: ${article.timestamp}</p>
+            <img src="${article.image}" alt="${article.title}">
+            ${formattedContent}
+          `;
+
+          // Generate JSON-LD structured data
+          const jsonLd = {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": article.title,
+            "image": article.image,
+            "datePublished": article.timestamp,
+            "author": {
+              "@type": "Person",
+              "name": "Duck Cloud News"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Duck Cloud News",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "assets/DuckCloudNews/apple-touch-icon.png"
+              }
+            },
+            "description": article.description
+          };
+
+          // Add JSON-LD script to the page
+          const script = document.createElement("script");
+          script.type = "application/ld+json";
+          script.textContent = JSON.stringify(jsonLd);
+          document.head.appendChild(script);
+        } else {
+          document.getElementById("article-content").innerHTML = "<p>Article not found.</p>";
+        }
+      })
+      .catch((error) => console.error("Error loading article:", error));
+  </script>
+</body>
+</html>
+
