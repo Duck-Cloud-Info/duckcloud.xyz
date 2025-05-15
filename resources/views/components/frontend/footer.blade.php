@@ -16,7 +16,7 @@
                     </div>
                     @endif
                     <div class="col-md-6 text-center">
-                        <img src="{{ asset("uploads/logo/".$sitesettings->logo_dark) }}" alt="{{ $sitesettings->site_title }}" class="logo-white"/>
+                        <img src="{{ asset("uploads/logo/".$sitesettings->logo_dark) }}" alt="{{ $sitesettings->site_title }}" class="logo-white" style="max-height: 40px;"/>
                         <p class="text-white text-justify mt-2">{{ $sitesettings->description }}</p>
                     </div>
                     @if ($socialmedia->count() > 0)
