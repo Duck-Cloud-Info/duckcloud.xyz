@@ -1,5 +1,5 @@
 @if ($categories->count() > 0)
-<div class="categories">
+<div class="categories" style="margin-top: 7rem;">
     <div class="container-fluid">
         <div class="categories-area">
             <div class="row">
