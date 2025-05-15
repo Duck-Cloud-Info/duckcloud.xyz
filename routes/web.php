@@ -25,6 +25,8 @@ use App\Http\Controllers\Frontend\TagController;
 use App\Http\Controllers\Frontend\UserController;
 use Illuminate\Support\Facades\Route;
 
+Route::view("/contact-us", "frontend.contact-us")->name("frontend.contact-us");
+
 Route::name("frontend.")->group(function() {
     Route::get("/", [HomeController::class, "index"])->name("home");
     Route::get("/search", [SearchController::class, "index"])->name("search");
