@@ -12,44 +12,44 @@
             @endif
             <div class="social-media">
                 <ul class="list-inline">
-                    @if ($user->facebook)
+                    @if ($post->user->facebook)
                     <li>
-                        <a href="{{ $user->facebook }}" target="_blank">
+                        <a href="{{ $post->user->facebook }}" target="_blank">
                             <i class="fab fa-facebook"></i>
                         </a>
                     </li>
                     @endif
-                    @if ($user->twitter)
+                    @if ($post->user->twitter)
                     <li>
-                        <a href="{{ $user->twitter }}" target="_blank">
+                        <a href="{{ $post->user->twitter }}" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
                     @endif
-                    @if ($user->instagram)
+                    @if ($post->user->instagram)
                     <li>
-                        <a href="{{ $user->instagram }}" target="_blank">
+                        <a href="{{ $post->user->instagram }}" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                     @endif
-                    @if ($user->linkedin)
+                    @if ($post->user->linkedin)
                     <li>
-                        <a href="{{ $user->linkedin }}" target="_blank">
+                        <a href="{{ $post->user->linkedin }}" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </li>
                     @endif
-                    @if ($user->youtube)
+                    @if ($post->user->youtube)
                     <li>
-                        <a href="{{ $user->youtube }}" target="_blank">
+                        <a href="{{ $post->user->youtube }}" target="_blank">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </li>
                     @endif
-                    @if ($user->pinterest)
+                    @if ($post->user->pinterest)
                     <li>
-                        <a href="{{ $user->pinterest }}" target="_blank">
+                        <a href="{{ $post->user->pinterest }}" target="_blank">
                             <i class="fab fa-pinterest"></i>
                         </a>
                     </li>
