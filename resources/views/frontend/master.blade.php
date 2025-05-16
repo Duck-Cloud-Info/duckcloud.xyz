@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{{ asset("assets/frontend/css/fontawesome.css") }}"/>
     <link rel="stylesheet" href="{{ asset("assets/frontend/css/style.css") }}"/>
     <link rel="stylesheet" href="{{ asset("assets/frontend/css/custom.css") }}"/>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3157572406863018"
+     crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="loader">
