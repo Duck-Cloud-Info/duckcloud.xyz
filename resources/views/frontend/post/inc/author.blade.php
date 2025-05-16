@@ -12,31 +12,48 @@
             @endif
             <div class="social-media">
                 <ul class="list-inline">
+                    @if ($user->facebook)
                     <li>
-                        <a href="#">
+                        <a href="{{ $user->facebook }}" target="_blank">
                             <i class="fab fa-facebook"></i>
                         </a>
                     </li>
+                    @endif
+                    @if ($user->twitter)
                     <li>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
+                        <a href="{{ $user->twitter }}" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
+                    @endif
+                    @if ($user->instagram)
                     <li>
-                        <a href="#" >
+                        <a href="{{ $user->instagram }}" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    @endif
+                    @if ($user->linkedin)
+                    <li>
+                        <a href="{{ $user->linkedin }}" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    @endif
+                    @if ($user->youtube)
+                    <li>
+                        <a href="{{ $user->youtube }}" target="_blank">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </li>
+                    @endif
+                    @if ($user->pinterest)
                     <li>
-                        <a href="#" >
+                        <a href="{{ $user->pinterest }}" target="_blank">
                             <i class="fab fa-pinterest"></i>
                         </a>
                     </li>
+                    @endif
                 </ul>
             </div>
         </div>
