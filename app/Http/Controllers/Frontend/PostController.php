@@ -18,8 +18,13 @@ class PostController extends Controller
             $q->where("status", true);
         }])->where("status", true)->where("slug", $slug)->first();
         if ($post) {
-            $post->views += 1;
-            $post->save();
+            // Session-based view tracking
+            $sessionKey = 'post_viewed_' . $post->id;
+            if (!session()->has($sessionKey)) {
+                $post->increment('views');
+                session()->put($sessionKey, true);
+            }
+
             $str = Str::class;
             return view("frontend.post.index", compact("post", "str"));
         }
