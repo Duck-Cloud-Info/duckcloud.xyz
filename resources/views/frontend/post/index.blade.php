@@ -1,6 +1,6 @@
 @extends("frontend.master")
 
-@push('meta')
+@section('meta')
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{{ $post->title }}" />
     <meta property="og:description" content="{{ Str::limit(strip_tags($post->content), 150) }}" />
@@ -14,8 +14,7 @@
 
     <link rel="canonical" href="{{ request()->fullUrl() }}" />
     <meta name="author" content="{{ $post->user->name }}" />
-
-@endpush
+@endsection
 
 @section("title", $post->title." - ".config('app.sitesettings')::first()->site_title)
 
