@@ -1,5 +1,22 @@
 @extends("frontend.master")
 
+@push('meta')
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ $post->title }}" />
+    <meta property="og:description" content="{{ Str::limit(strip_tags($post->content), 150) }}" />
+    <meta property="og:url" content="{{ request()->fullUrl() }}" />
+    <meta property="og:image" content="{{ asset('uploads/post/' . $post->thumbnail) }}" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ $post->title }}" />
+    <meta name="twitter:description" content="{{ Str::limit(strip_tags($post->content), 150) }}" />
+    <meta name="twitter:image" content="{{ asset('uploads/post/' . $post->thumbnail) }}" />
+
+    <link rel="canonical" href="{{ request()->fullUrl() }}" />
+    <meta name="author" content="{{ $post->user->name }}" />
+
+@endpush
+
 @section("title", $post->title." - ".config('app.sitesettings')::first()->site_title)
 
 @section("content")
