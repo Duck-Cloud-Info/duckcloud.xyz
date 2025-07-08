@@ -32,6 +32,13 @@
     <link rel="stylesheet" href="{{ asset("assets/frontend/css/fontawesome.css") }}"/>
     <link rel="stylesheet" href="{{ asset("assets/frontend/css/style.css") }}"/>
     <link rel="stylesheet" href="{{ asset("assets/frontend/css/custom.css") }}"/>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WTH86DLL');</script>
+    <!-- End Google Tag Manager -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3157572406863018"
      crossorigin="anonymous"></script>
 </head>
@@ -41,6 +48,37 @@
     </div>
     <x-frontend.header/>
     @yield("content")
+    <br>
+    @if(isset($realtimeUsers))
+    <div class="container-fluid realtime-analytics-section">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-3">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
+                        <h5 class="mb-1">👀 Real-Time Visitors</h5>
+                        <h2 class="mb-0 text-primary">{{ $realtimeUsers }}</h2>
+                        <small class="text-muted">Users on site right now</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
+                        <h6 class="mb-1">Top Countries</h6>
+                        <ul class="list-unstyled mb-0">
+                            @foreach($topCountries ?? [] as $country)
+                                <li>
+                                    {{ $country['country'] }} <span class="badge bg-light text-dark">{{ $country['activeUsers'] }}</span>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @endif
+    <br>
     <x-frontend.footer/>
     <div class="back">
         <a href="#" class="back-top">
